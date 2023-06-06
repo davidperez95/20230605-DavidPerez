@@ -1,0 +1,21 @@
+mkdir 20230605-DavidPerez
+git init
+git remote add origin git@github.com:davidperez95/20230605-DavidPerez.git
+touch comandos.txt main.js index.html
+git add .
+git commit -m "commit 01 de DavidPerez"
+git branch -M main
+git push -u origin main
+git branch feature
+git checkout feature
+mkdir hardware software seguridadInformatica
+touch harware/resumen.txt software/resumen.txt seguridadInformatica/resumen.txt
+git add .
+git commit -m "commit 02 de DavidPerez"
+git push --set-upstream origin feature
+git checkout main
+mv main.js resumenHardware.txt
+mv index.html resumenSoftware.txt
+git add .
+git commit -m "commit 03 de DavidPerez"
+git push
